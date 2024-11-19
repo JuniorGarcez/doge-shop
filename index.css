@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e98c00; 
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.navbar-search input {
+  border: none;
+  outline: none;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.navbar-search input::placeholder {
+  color: #FFA500;
+}
+
+.navbar-search img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Ajusta o layout para coluna */
+    align-items: flex-start;
+    padding: 10px; /* Reduz padding */
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px; /* Dá espaço entre logo e outros elementos */
+  }
+
+  .navbar-search {
+    width: 100%; /* Ocupa largura total */
+    margin: 0 0 10px; /* Ajusta margens para dispositivos pequenos */
+  }
+
+  .navbar-icons {
+    gap: 10px; /* Reduz o espaçamento entre os ícones */
+    justify-content: center;
+    width: 100%; /* Centraliza ícones */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo img {
+    width: 40px; /* Reduz o tamanho do logo */
+    height: 40px;
+  }
+
+  .navbar-search {
+    padding: 5px; /* Reduz padding interno */
+  }
+
+  .navbar-search input {
+    font-size: 14px; /* Reduz tamanho da fonte */
+  }
+
+  .navbar-icons img {
+    width: 18px; /* Reduz tamanho dos ícones */
+    height: 18px;
+  }
+}
+
+/* Ajustes para a seção de produtos */
+.container {
+  background-color: #fffbf8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Permite que os produtos se movam para a linha seguinte, se necessário */
+  gap: 20px; /* Espaço entre os itens */
+  justify-content: space-between; /* Distribui os itens com o máximo de espaço possível */
+  width: 80%;
+  margin: 0% 10%;
+}
+
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background: white;
+  box-sizing: border-box;
+  flex: 1 0 30%; /* Ajuste para ocupar 30% do espaço disponível */
+  min-height: 350px; /* Altura mínima para garantir consistência */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Garante que o conteúdo seja distribuído */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 24px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.old-price {
+  font-size: 16px;
+  color: #6c757d;
+  text-decoration: line-through;
+}
+
+.discount {
+  color: #28a745;
+  font-size: 14px;
+}
+
+.badge-custom {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
