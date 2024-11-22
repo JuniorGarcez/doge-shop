@@ -32,7 +32,8 @@ body {
 .navbar-search {
   display: flex;
   align-items: center;
-  background-color: white;
+  background-color: #e98c00;
+  border: 2px solid white;
   border-radius: 20px;
   padding: 5px 10px;
   flex: 1;
@@ -44,10 +45,12 @@ body {
   outline: none;
   flex: 1;
   border-radius: 20px;
+  background-color: #e98c00; 
+  color: #ffffff;
 }
 
 .navbar-search input::placeholder {
-  color: #FFA500;
+  color: #ffffff;
 }
 
 .navbar-search img {
@@ -56,51 +59,49 @@ body {
   margin-right: 10px;
 }
 
-/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* Ajusta o layout para coluna */
+    flex-direction: column;
     align-items: flex-start;
-    padding: 10px; /* Reduz padding */
+    padding: 10px;
   }
 
   .navbar-logo {
-    margin-bottom: 10px; /* Dá espaço entre logo e outros elementos */
+    margin-bottom: 10px;
   }
 
   .navbar-search {
-    width: 100%; /* Ocupa largura total */
-    margin: 0 0 10px; /* Ajusta margens para dispositivos pequenos */
+    width: 100%;
+    margin: 0 0 10px;
   }
 
   .navbar-icons {
-    gap: 10px; /* Reduz o espaçamento entre os ícones */
+    gap: 10px;
     justify-content: center;
-    width: 100%; /* Centraliza ícones */
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .navbar-logo img {
-    width: 40px; /* Reduz o tamanho do logo */
+    width: 40px;
     height: 40px;
   }
 
   .navbar-search {
-    padding: 5px; /* Reduz padding interno */
+    padding: 5px;
   }
 
   .navbar-search input {
-    font-size: 14px; /* Reduz tamanho da fonte */
+    font-size: 14px;
   }
 
   .navbar-icons img {
-    width: 18px; /* Reduz tamanho dos ícones */
+    width: 18px;
     height: 18px;
   }
 }
 
-/* Ajustes para a seção de produtos */
 .container {
   background-color: #fffbf8;
   padding: 20px;
@@ -108,9 +109,9 @@ body {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* Permite que os produtos se movam para a linha seguinte, se necessário */
-  gap: 20px; /* Espaço entre os itens */
-  justify-content: space-between; /* Distribui os itens com o máximo de espaço possível */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
   width: 80%;
   margin: 0% 10%;
 }
@@ -122,11 +123,12 @@ body {
   text-align: center;
   background: white;
   box-sizing: border-box;
-  flex: 1 0 30%; /* Ajuste para ocupar 30% do espaço disponível */
-  min-height: 350px; /* Altura mínima para garantir consistência */
+  flex: 1 0 30%;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Garante que o conteúdo seja distribuído */
+  justify-content: space-between;
+  width: 250px;
 }
 
 .product-card img {
