@@ -129,10 +129,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 250px;
+  height: 500px;
 }
 
 .product-card img {
   max-width: 100%;
+  max-height: 200px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -174,4 +176,19 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
+}
+
+.btn {
+  color: #fff;
+  border: #ffffff;
+  background-color: rgb(26, 111, 223);
+  border-radius: 6px;
+  margin-top: 10px;
+  height: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgb(68, 151, 199);
+  cursor: pointer;
 }
